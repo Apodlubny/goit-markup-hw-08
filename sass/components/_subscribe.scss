@@ -1,0 +1,37 @@
+/* subscribe styling */
+.subscribe-box {
+  margin-left: auto;
+}
+.subscribe-box__mail {
+  width: 570px;
+  display: flex;
+  align-items: center;
+}
+.button__icon {
+  display: block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.subscribe-box__input {
+  width: 100%;
+  min-height: 50px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 10px 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--primary-white);
+  background-color: transparent;
+  &::placeholder {
+    color: var(--contacts-color);
+  }
+  & + .hero__button {
+    padding: 10px 6px;
+  }
+}
+
+.button__text {
+  margin-right: 10px;
+}

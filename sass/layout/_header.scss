@@ -1,0 +1,9 @@
+.header {
+  border-bottom: 1px solid var(--header-border);
+  background-color: var(--primary-white);
+}
+.main-nav,
+nav {
+  display: flex;
+  align-items: center;
+}

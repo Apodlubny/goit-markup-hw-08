@@ -1,0 +1,28 @@
+/* header contacts */
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts__link {
+  padding: 32px 0;
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color var(--main-transition);
+  &:hover,
+  &.link:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 30px;
+}
+/* header icons */
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

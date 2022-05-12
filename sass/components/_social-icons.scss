@@ -1,0 +1,30 @@
+/* social media styling */
+.icons-list {
+  display: flex;
+  justify-content: center;
+}
+
+.icons-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--social-icons);
+  transition: background-color var(--main-transition),
+    color var(--main-transition);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white);
+  }
+}
+
+.social-icon {
+  fill: currentColor;
+}

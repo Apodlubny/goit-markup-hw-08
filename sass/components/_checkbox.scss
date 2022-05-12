@@ -1,0 +1,48 @@
+/* checkbox styloing */
+.label-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.checkbox-text {
+  margin-left: 8px;
+  text-align: center;
+  line-height: 1.71;
+}
+
+.policy-link {
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+.modal-checkbox {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check-icon {
+  display: flex;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--logo-color);
+  border-radius: 2px;
+  background-size: contain;
+  background-origin: border-box;
+  transition: background-color var(--main-transition),
+    border-color var(--main-transition);
+  fill: var(--primary-white);
+  .modal-checkbox:focus + &,
+  .modal-checkbox:hover + & {
+    border-color: var(--accent-color);
+  }
+  .modal-checkbox:checked + & {
+    background-color: var(--accent-color);
+    border-color: transparent;
+  }
+}
