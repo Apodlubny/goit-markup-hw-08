@@ -1,0 +1,118 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-white);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--main-transition), visibility var(--main-transition);
+  z-index: 2;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 48px 40px;
+  }
+
+  &__link {
+    display: block;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__wrapper {
+    margin-top: auto;
+  }
+
+  &__contact-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__contact-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    color: inherit;
+
+    &[href="tel:+380961111111"] {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+      color: var(--accent-color);
+    }
+  }
+
+  &__contact-list {
+    margin-bottom: 64px;
+  }
+
+  &__social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.mobile-menu__icon {
+  fill: currentColor;
+}
+
+.mobile-menu__close-icon {
+  fill: currentColor;
+}
+
+.mobile-menu__btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  line-height: 0;
+  transition: color var(--main-transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+}
+.active__link {
+  color: var(--accent-color);
+}
+
+.card-set {
+  &__list {
+    display: inline-flex;
+
+    &:not(:last-child) {
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    &:nth-child(n + 2) {
+      padding-left: 10px;
+    }
+  }
+}

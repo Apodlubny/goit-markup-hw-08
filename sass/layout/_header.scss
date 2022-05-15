@@ -1,8 +1,20 @@
 .header {
   border-bottom: 1px solid var(--header-border);
   background-color: var(--primary-white);
+  position: relative;
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
 }
-.main-nav,
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 nav {
   display: flex;
   align-items: center;

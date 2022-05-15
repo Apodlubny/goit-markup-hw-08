@@ -1,9 +1,19 @@
+// .nav {
+//   display: flex;
+//   align-items: center;
+// }
+
 .navbar {
   display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .navbar__link {
-  display: inline-block;
+  // display: inline-block;
+  display: flex;
+  align-items: center;
   padding: 32px 0;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -24,10 +34,11 @@
 .current {
   color: var(--accent-color);
   &::after {
+    content: "";
     position: absolute;
     bottom: -1px;
     left: 0;
-    content: "";
+
     width: 100%;
     height: 4px;
     border-radius: 2px;
