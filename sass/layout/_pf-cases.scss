@@ -23,7 +23,9 @@
 }
 
 .pf-box-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   transition: box-shadow var(--main-transition);
   &:hover,
   &:focus {
@@ -91,12 +93,5 @@
   padding: 20px 24px;
   border-right: 1px solid var(--cards-border);
   border-left: 1px solid var(--cards-border);
-
   border-bottom: 1px solid var(--cards-border);
-  @media screen and (max-width: 480px) {
-    min-height: 110px;
-  }
-  @media screen and (min-width: 480px) {
-    min-height: 146px;
-  }
 }
