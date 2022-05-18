@@ -1,8 +1,9 @@
 .features-list {
-  width: 100%;
+  // width: 100%;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
@@ -15,18 +16,12 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    &:nth-child(2n + 1) {
-      margin-right: 30px;
-    }
-    max-width: none;
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-    width: calc((100% - 15px * 6) / 4);
+    width: calc((100% - 120px) / 4);
   }
 }
 

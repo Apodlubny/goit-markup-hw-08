@@ -10,6 +10,9 @@
   pointer-events: none;
   transition: opacity var(--main-transition), visibility var(--main-transition);
   z-index: 2;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
   &__container {
     display: flex;
@@ -82,7 +85,7 @@
 
 .mobile-menu__btn {
   position: absolute;
-  top: 15px;
+
   right: 15px;
   background-color: transparent;
   border: none;
@@ -93,6 +96,9 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+.mobile-menu__btn--close {
+  top: 10px;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu__btn {

@@ -40,7 +40,7 @@
   background-color: transparent;
   flex-grow: 1;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     margin-bottom: 20px;
   }
   @media screen and (min-width: 1200px) {
@@ -54,7 +54,7 @@
   padding: 10px 28px;
   display: inline-flex;
   align-items: center;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     margin-left: auto;
     margin-right: auto;
   }
